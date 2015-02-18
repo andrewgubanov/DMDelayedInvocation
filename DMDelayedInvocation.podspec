@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/andrewgubanov/DMDelayedInvocation.git',
     :tag => s.version.to_s
   }
-  s.source_files = 'Source/**/*.{h,m}'
+  s.source_files = '*.{h,m}'
   s.frameworks = 'Foundation'
   s.requires_arc = true
 end
