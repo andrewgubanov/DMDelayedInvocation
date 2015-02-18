@@ -1,6 +1,7 @@
 # DMDelayedInvocation
 Handy tool to manage method invocation to be called only one time per cycle.
 
+## How To Use
 ``` objc
 self.delayedInvocation = [[DMDelayedInvocation alloc] initWithTarget:self delay:0.0f messageQueue:dispatch_get_main_queue()];
 
