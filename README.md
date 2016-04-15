@@ -20,5 +20,3 @@ self.delayedInvocation = [[DMDelayedInvocation alloc] initWithTarget:self delay:
     //even if both -foo and -foo1 were called, -layoutMyUI will be called only once
 }
 ```
-## Install
-pod 'DMDelayedInvocation'
