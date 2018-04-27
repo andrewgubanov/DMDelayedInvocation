@@ -8,6 +8,7 @@ self.delayedInvocation = [[DMDelayedInvocation alloc] initWithTarget:self delay:
 - (void)foo
 {
     [self.delayedInvocation layoutMyUI];
+    [self foo1];
 }
 
 - (void)foo1
@@ -17,6 +18,6 @@ self.delayedInvocation = [[DMDelayedInvocation alloc] initWithTarget:self delay:
 
 - (void)layoutMyUI
 {
-    //even if both -foo and -foo1 were called, -layoutMyUI will be called only once
+    //as both -foo and -foo1 were called in the same run loop cycle, -layoutMyUI will be called only once
 }
 ```
